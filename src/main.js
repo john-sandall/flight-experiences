@@ -324,7 +324,7 @@ function createCardHTML(exp) {
         src="${exp.imageUrl}"
         alt="${exp.aircraft}"
         loading="lazy"
-        onerror="this.src='https://via.placeholder.com/400x200?text=Aircraft+Image'"
+        onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.display='flex'; this.alt=''"
       >
       <div class="card-content">
         <div class="card-header">
@@ -400,7 +400,7 @@ function openModal(id) {
 
   modalBody.innerHTML = `
     <img class="modal-image" src="${exp.imageUrl}" alt="${exp.aircraft}"
-         onerror="this.src='https://via.placeholder.com/600x250?text=Aircraft+Image'">
+         onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.alt=''">
     <div class="modal-body">
       <h2 class="modal-title">${exp.name}</h2>
       <p class="modal-aircraft">${exp.aircraft}</p>
