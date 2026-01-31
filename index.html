@@ -16,7 +16,15 @@
   </header>
 
   <section class="filters-bar">
-    <div class="filters-content">
+    <div class="mobile-controls">
+      <button id="toggle-filters" class="mobile-btn">
+        <span class="filter-icon">☰</span> Filters
+      </button>
+      <button id="toggle-view" class="mobile-btn">
+        <span class="map-icon">🗺</span> Map
+      </button>
+    </div>
+    <div class="filters-content" id="filters-panel">
       <div class="filter-group">
         <label for="budget-slider">Budget: <span id="budget-value">£500</span></label>
         <input type="range" id="budget-slider" min="100" max="600" value="500" step="25">

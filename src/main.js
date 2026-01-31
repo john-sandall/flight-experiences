@@ -25,9 +25,58 @@ let filters = {
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   initFilters();
+  initMobileControls();
   renderCards();
   renderMapMarkers();
 });
+
+// Initialize mobile controls
+function initMobileControls() {
+  const toggleFilters = document.getElementById('toggle-filters');
+  const toggleView = document.getElementById('toggle-view');
+  const filtersPanel = document.getElementById('filters-panel');
+  const mapContainer = document.querySelector('.map-container');
+  const cardsContainer = document.querySelector('.cards-container');
+
+  // Toggle filters panel
+  toggleFilters.addEventListener('click', () => {
+    filtersPanel.classList.toggle('show');
+    toggleFilters.classList.toggle('active');
+  });
+
+  // Toggle between map and list view
+  toggleView.addEventListener('click', () => {
+    const showingMap = mapContainer.classList.contains('show');
+
+    if (showingMap) {
+      // Switch to list view
+      mapContainer.classList.remove('show');
+      cardsContainer.classList.remove('hide');
+      toggleView.innerHTML = '<span class="map-icon">🗺</span> Map';
+      toggleView.classList.remove('active');
+    } else {
+      // Switch to map view
+      mapContainer.classList.add('show');
+      cardsContainer.classList.add('hide');
+      toggleView.innerHTML = '<span class="list-icon">📋</span> List';
+      toggleView.classList.add('active');
+      // Invalidate map size and fit bounds after showing
+      setTimeout(() => {
+        map.invalidateSize();
+        if (filteredExperiences.length > 0) {
+          const bounds = L.latLngBounds(
+            filteredExperiences.map(exp => [exp.coordinates.lat, exp.coordinates.lng])
+          );
+          const home = airfields.find(a => a.isHome);
+          if (home) {
+            bounds.extend([home.lat, home.lng]);
+          }
+          map.fitBounds(bounds, { padding: [30, 30] });
+        }
+      }, 150);
+    }
+  });
+}
 
 // Initialize Leaflet map
 function initMap() {
