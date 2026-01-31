@@ -71,33 +71,28 @@ body {
   margin-bottom: 16px;
 }
 
-.logo-placeholder {
-  width: 100px;
-  height: 100px;
-  border: 3px solid var(--gold);
+.logo-image {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(201, 162, 39, 0.1);
+  overflow: hidden;
   box-shadow:
-    0 0 0 6px rgba(201, 162, 39, 0.15),
-    inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    0 0 0 4px rgba(201, 162, 39, 0.3),
+    0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
-.logo-placeholder:hover {
-  transform: scale(1.05) rotate(-2deg);
+.logo-image:hover {
+  transform: scale(1.05);
   box-shadow:
-    0 0 0 8px rgba(201, 162, 39, 0.2),
-    inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    0 0 0 6px rgba(201, 162, 39, 0.4),
+    0 6px 25px rgba(0, 0, 0, 0.4);
 }
 
-.logo-svg {
-  width: 70px;
-  height: 70px;
-  color: var(--gold);
+.logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand-text {
@@ -697,14 +692,9 @@ body {
     gap: 12px;
   }
 
-  .logo-placeholder {
-    width: 80px;
-    height: 80px;
-  }
-
-  .logo-svg {
-    width: 55px;
-    height: 55px;
+  .logo-image {
+    width: 90px;
+    height: 90px;
   }
 
   .brand-text {
