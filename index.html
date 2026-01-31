@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Experiences for Mum's 70th</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1>Flight Experiences for Mum's 70th</h1>
+      <p class="header-subtitle">Vintage aircraft adventures from Brighton</p>
+    </div>
+  </header>
+
+  <section class="filters-bar">
+    <div class="filters-content">
+      <div class="filter-group">
+        <label for="budget-slider">Budget: <span id="budget-value">£500</span></label>
+        <input type="range" id="budget-slider" min="100" max="600" value="500" step="25">
+        <label class="checkbox-label">
+          <input type="checkbox" id="show-over-budget"> Show over budget
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <label for="duration-filter">Duration</label>
+        <select id="duration-filter">
+          <option value="any">Any duration</option>
+          <option value="under30">Under 30 min</option>
+          <option value="30-60">30-60 min</option>
+          <option value="60+">60+ min</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="aerobatics-filter">Aerobatics</label>
+        <select id="aerobatics-filter">
+          <option value="any">Any</option>
+          <option value="yes">With aerobatics</option>
+          <option value="no">No aerobatics</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="type-filter">Aircraft Type</label>
+        <select id="type-filter">
+          <option value="any">All types</option>
+          <option value="vintage-biplane">Vintage/Biplane</option>
+          <option value="military">Military Trainer</option>
+          <option value="aerobatic">Aerobatic</option>
+          <option value="warbird">WW2 Warbird</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="drive-filter">Drive Time</label>
+        <select id="drive-filter">
+          <option value="any">Any distance</option>
+          <option value="under30">Under 30 min</option>
+          <option value="under1hr">Under 1 hour</option>
+          <option value="under2hr">Under 2 hours</option>
+          <option value="under3hr">Under 3 hours</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="landmarks-filter">Landmarks</label>
+        <select id="landmarks-filter">
+          <option value="any">All landmarks</option>
+          <optgroup label="Historic">
+            <option value="Kent Stately Homes">Kent Stately Homes</option>
+          </optgroup>
+          <optgroup label="Aviation Heritage">
+            <option value="WW2 Airfields">WW2 Airfields</option>
+          </optgroup>
+          <optgroup label="Scenic">
+            <option value="Coastal">Coastal</option>
+            <option value="South Downs">South Downs</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <button id="reset-filters" class="reset-btn">Reset Filters</button>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="cards-container">
+      <div class="cards-header">
+        <span id="results-count">12 experiences</span>
+        <select id="sort-select">
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="duration-asc">Duration: Short to Long</option>
+          <option value="drive-asc">Drive Time: Nearest First</option>
+        </select>
+      </div>
+      <div id="cards-list" class="cards-list">
+        <!-- Cards rendered by JS -->
+      </div>
+    </section>
+
+    <section class="map-container">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
