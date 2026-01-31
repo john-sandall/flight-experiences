@@ -264,10 +264,16 @@ function sortExperiences() {
         return a.price - b.price;
       case 'price-desc':
         return b.price - a.price;
+      case 'cost-per-min-asc':
+        return a.costPerMin - b.costPerMin;
       case 'duration-asc':
         return a.duration - b.duration;
+      case 'duration-desc':
+        return b.duration - a.duration;
       case 'drive-asc':
         return a.driveTime - b.driveTime;
+      case 'drive-desc':
+        return b.driveTime - a.driveTime;
       default:
         return 0;
     }
