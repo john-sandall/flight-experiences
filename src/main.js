@@ -15,7 +15,9 @@ let filters = {
   showOverBudget: false,
   duration: 'any',
   aerobatics: 'any',
+  controls: 'any',
   type: 'any',
+  location: 'any',
   drive: 'any',
   landmarks: 'any',
   sort: 'price-asc'
@@ -175,6 +177,16 @@ function renderMapMarkers() {
 
 // Initialize filter controls
 function initFilters() {
+  // Populate location dropdown dynamically
+  const locationFilter = document.getElementById('location-filter');
+  const locations = [...new Set(experiences.map(exp => exp.location))].sort();
+  locations.forEach(loc => {
+    const option = document.createElement('option');
+    option.value = loc;
+    option.textContent = loc;
+    locationFilter.appendChild(option);
+  });
+
   // Budget slider
   const budgetSlider = document.getElementById('budget-slider');
   const budgetValue = document.getElementById('budget-value');
@@ -202,9 +214,21 @@ function initFilters() {
     applyFilters();
   });
 
+  // Controls filter
+  document.getElementById('controls-filter').addEventListener('change', (e) => {
+    filters.controls = e.target.value;
+    applyFilters();
+  });
+
   // Type filter
   document.getElementById('type-filter').addEventListener('change', (e) => {
     filters.type = e.target.value;
+    applyFilters();
+  });
+
+  // Location filter
+  document.getElementById('location-filter').addEventListener('change', (e) => {
+    filters.location = e.target.value;
     applyFilters();
   });
 
@@ -236,7 +260,9 @@ function resetFilters() {
     showOverBudget: false,
     duration: 'any',
     aerobatics: 'any',
+    controls: 'any',
     type: 'any',
+    location: 'any',
     drive: 'any',
     landmarks: 'any',
     sort: 'price-asc'
@@ -248,7 +274,9 @@ function resetFilters() {
   document.getElementById('show-over-budget').checked = false;
   document.getElementById('duration-filter').value = 'any';
   document.getElementById('aerobatics-filter').value = 'any';
+  document.getElementById('controls-filter').value = 'any';
   document.getElementById('type-filter').value = 'any';
+  document.getElementById('location-filter').value = 'any';
   document.getElementById('drive-filter').value = 'any';
   document.getElementById('landmarks-filter').value = 'any';
   document.getElementById('sort-select').value = 'price-asc';
@@ -276,8 +304,19 @@ function applyFilters() {
       if (filters.aerobatics === 'no' && exp.hasAerobatics) return false;
     }
 
+    // Controls filter
+    if (filters.controls !== 'any') {
+      if (filters.controls === 'yes' && !exp.canTakeControls) return false;
+      if (filters.controls === 'no' && exp.canTakeControls) return false;
+    }
+
     // Type filter
     if (filters.type !== 'any' && exp.aircraftType !== filters.type) {
+      return false;
+    }
+
+    // Location filter
+    if (filters.location !== 'any' && exp.location !== filters.location) {
       return false;
     }
 
