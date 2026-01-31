@@ -21,8 +21,8 @@
       "inBudget": true,
       "notes": "PERFECT MATCH! Military trainer with aerobatics option, flies over historic Kent estates.",
       "website": "https://reddogaviation.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Scottish_Aviation_Bulldog_T1_AN0495134.jpg/1280px-Scottish_Aviation_Bulldog_T1_AN0495134.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/bulldog.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.2136, "lng": -0.1386 }
     },
     {
@@ -46,8 +46,8 @@
       "inBudget": true,
       "notes": "Beautiful coastal flight in a classic taildragger. Closest to Brighton!",
       "website": "https://classicwings.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Piper_PA-18-150_Super_Cub_%28D-EGFG%29_05.jpg/1280px-Piper_PA-18-150_Super_Cub_%28D-EGFG%29_05.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/supercub.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 50.8356, "lng": -0.2972 }
     },
     {
@@ -71,8 +71,8 @@
       "inBudget": true,
       "notes": "Iconic open-cockpit biplane experience. Leather helmet and goggles provided!",
       "website": "https://tigermothexperience.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/De_Havilland_Tiger_Moth_in_flight.jpg/1280px-De_Havilland_Tiger_Moth_in_flight.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/tigermoth.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.1569, "lng": 0.6417 }
     },
     {
@@ -96,8 +96,8 @@
       "inBudget": true,
       "notes": "Fly from the legendary Battle of Britain airfield in a classic twin-engine aircraft.",
       "website": "https://classicairforce.com",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/De_Havilland_DH.89A_Dragon_Rapide_%27G-AIYR%27_%2844340119890%29.jpg/1280px-De_Havilland_DH.89A_Dragon_Rapide_%27G-AIYR%27_%2844340119890%29.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/rapide.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.3308, "lng": 0.0325 }
     },
     {
@@ -121,8 +121,8 @@
       "inBudget": true,
       "notes": "Pure adrenaline! Loops, rolls, and spins in a competition aerobatic aircraft.",
       "website": "https://ultimateaerobatics.com",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pitts_Model_12_in_flight.jpg/1280px-Pitts_Model_12_in_flight.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/pitts.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 50.8598, "lng": -0.7601 }
     },
     {
@@ -146,8 +146,8 @@
       "inBudget": true,
       "notes": "Classic RAF trainer - same aircraft used to train military pilots for decades.",
       "website": "https://aerolegends.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/De_Havilland_Canada_DHC-1_Chipmunk_22_%28G-BBMR%29.jpg/1280px-De_Havilland_Canada_DHC-1_Chipmunk_22_%28G-BBMR%29.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/chipmunk.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.1569, "lng": 0.6417 }
     },
     {
@@ -171,8 +171,8 @@
       "inBudget": true,
       "notes": "Depart from the famous Duxford museum - combine with a museum visit!",
       "website": "https://classicwings.co.uk/duxford",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/De_Havilland_DH.89A_Dragon_Rapide_%27G-AIYR%27_%2844340119890%29.jpg/1280px-De_Havilland_DH.89A_Dragon_Rapide_%27G-AIYR%27_%2844340119890%29.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/rapide.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 52.0908, "lng": 0.1319 }
     },
     {
@@ -196,8 +196,8 @@
       "inBudget": false,
       "notes": "The ultimate WW2 trainer experience - loud, powerful, and unforgettable!",
       "website": "https://harvardformation.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/North_American_T-6G_Texan_AN1129672.jpg/1280px-North_American_T-6G_Texan_AN1129672.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/harvard.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 52.0775, "lng": 0.0617 }
     },
     {
@@ -221,8 +221,8 @@
       "inBudget": true,
       "notes": "Competition-level aerobatics in a state-of-the-art aircraft. Intense!",
       "website": "https://extremeair.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Extra_EA-330LX%2C_The_Blades_%28Aerobatic_Team%29_JP7568499.jpg/1280px-Extra_EA-330LX%2C_The_Blades_%28Aerobatic_Team%29_JP7568499.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/extra330.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.5008, "lng": -0.7744 }
     },
     {
@@ -246,8 +246,8 @@
       "inBudget": false,
       "notes": "The ultimate bucket list experience - fly in an actual Spitfire!",
       "website": "https://bigginhillheritagehangar.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ray_Flying_Legends_2005-1.jpg/1280px-Ray_Flying_Legends_2005-1.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/spitfire.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.3308, "lng": 0.0325 }
     },
     {
@@ -271,8 +271,8 @@
       "inBudget": true,
       "notes": "Great value classic flight experience over the Thames Estuary.",
       "website": "https://damynshall.co.uk",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Piper_PA-18-150_Super_Cub_%28D-EGFG%29_05.jpg/1280px-Piper_PA-18-150_Super_Cub_%28D-EGFG%29_05.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/pipercub.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 51.5286, "lng": 0.2456 }
     },
     {
@@ -296,8 +296,8 @@
       "inBudget": true,
       "notes": "Scenic flight over the beautiful Goodwood Estate and South Downs.",
       "website": "https://goodwood.com/aviation",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cessna.172.arp.750pix.jpg/1280px-Cessna.172.arp.750pix.jpg",
-      "imageCredit": "Wikimedia Commons, CC-BY-SA",
+      "imageUrl": "./images/cessna.jpg",
+      "imageCredit": "Pexels",
       "coordinates": { "lat": 50.8598, "lng": -0.7601 }
     }
   ],
