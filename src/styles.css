@@ -127,8 +127,25 @@ body {
 .header-tagline {
   font-size: 15px;
   color: rgba(250, 246, 241, 0.85);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   letter-spacing: 0.5px;
+}
+
+.header-back-link {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.header-back-link:hover {
+  background: rgba(201, 162, 39, 0.15);
+  border-color: var(--gold);
 }
 
 .header-flourish {
